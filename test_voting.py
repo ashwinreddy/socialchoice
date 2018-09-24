@@ -1,7 +1,6 @@
 import unittest
 import voting
 
-
 math_club_election = {'ABCD': 14, 'CBDA': 10, 'DCBA': 8, 'BDCA': 4, 'CDBA': 1}
 
 class TestPlurality(unittest.TestCase):

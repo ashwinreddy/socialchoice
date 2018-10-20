@@ -23,11 +23,11 @@ class PairwiseComparison(Method):
         return winner
 
 
-    def _compute_ranking(self):
+    def compute_ranking(self):
         # pit every possible combination of two candidates with each other
         for i in range(self.preference_schedule.number_of_candidates):
             for j in range(i+1, self.preference_schedule.number_of_candidates):
                 # compare the candidates
                 winner = self._compare_candidates(i, j)
                 # give the point to the winner of the comparison
-                self.points[winner] += 1
+                self._points[winner] += 1

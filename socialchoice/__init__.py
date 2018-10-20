@@ -1,2 +1,2 @@
-from .methods import *
+from .voting import *
 from .preference_schedule import PreferenceSchedule

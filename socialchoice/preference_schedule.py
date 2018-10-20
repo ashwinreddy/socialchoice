@@ -43,3 +43,6 @@ class PreferenceSchedule(object):
     @property
     def number_of_candidates(self):
         return len(self.candidates_names)
+    
+    def __str__(self):
+        return str(self.votes.T)

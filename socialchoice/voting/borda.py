@@ -9,4 +9,4 @@ class BordaCount(Method):
     
     def _parse_ballot(self, number_of_votes, ballot_order):
         for idx, candidate in enumerate(ballot_order):
-            self.points[candidate] += number_of_votes * (self.preference_schedule.number_of_candidates - idx)
+            self._points[candidate] += number_of_votes * (self.preference_schedule.number_of_candidates - idx)
